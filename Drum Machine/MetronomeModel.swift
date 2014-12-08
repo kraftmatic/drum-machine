@@ -18,12 +18,17 @@ class MetronomeModel: NSObject {
         super.init()
     }
 
-    func startMetronome() {
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
+    func startMetronome(bpm: Int) {
+        var bpmDouble: Double = Double(bpm)
+        var timing: NSTimeInterval = 60.0 / bpmDouble
+        timer = NSTimer.scheduledTimerWithTimeInterval(timing, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
+    }
+    
+    func stopMetronome(){
+        timer.invalidate()
     }
     
     func fireTick(){
-        println("test in model")
         delegate?.metronomeTick()
     }
     
