@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y57-AX-dVh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drum Machine-->
+        <scene sceneID="c7V-aQ-cHB">
+            <objects>
+                <viewController id="nC3-py-3ia" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZMB-Fl-f5S"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ym-zT-j30"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJE-4L-C1S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drum Machine" image="drum.png" id="4Bm-Ca-ZHk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1b-8u-oOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="737"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="dUI-9G-pbz">
+            <objects>
+                <viewController id="1MY-NV-wbh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WEU-vy-Jhp"/>
+                        <viewControllerLayoutGuide type="bottom" id="sIp-NE-vFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u5y-9H-DS6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="grand-prize-kit.png" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-ZJ-ArF">
+                                <rect key="frame" x="132" y="28" width="336" height="264"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drum Machine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgv-op-CFj">
+                                <rect key="frame" x="69" y="268" width="463" height="64"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="58"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eL2-ZJ-ArF" firstAttribute="top" secondItem="WEU-vy-Jhp" secondAttribute="bottom" constant="8" id="DUZ-sJ-bem"/>
+                            <constraint firstAttribute="centerY" secondItem="vgv-op-CFj" secondAttribute="centerY" id="GaG-mL-FwT"/>
+                            <constraint firstAttribute="centerX" secondItem="vgv-op-CFj" secondAttribute="centerX" id="d5u-zK-Ubu"/>
+                            <constraint firstAttribute="centerX" secondItem="eL2-ZJ-ArF" secondAttribute="centerX" id="eX5-Ih-IgA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about.png" id="E45-jz-62c"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IB1-UL-lh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="-720"/>
+        </scene>
+        <!--Metronome-->
+        <scene sceneID="o6S-0p-n3B">
+            <objects>
+                <viewController id="qT0-Jv-ok5" customClass="MetronomeViewController" customModule="Drum_Machine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2uW-vF-Pfj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oog-jn-hsp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MxT-fK-SNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-MU-Ndw">
+                                <rect key="frame" x="16" y="30" width="230" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="104-jc-hWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-q8-nbz">
+                                <rect key="frame" x="16" y="68" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pba-3W-jdY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BJx-q0-iaT">
+                                <rect key="frame" x="16" y="123" width="230" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="2/4"/>
+                                    <segment title="3/4"/>
+                                    <segment title="4/4"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Signature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-e3-yNj">
+                                <rect key="frame" x="21" y="164" width="179" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QN2-CE-x7I"/>
+                                    <constraint firstAttribute="width" constant="179" id="wor-pm-tXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Sd-dL3">
+                                <rect key="frame" x="455" y="37" width="94" height="70"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="test"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="qT0-Jv-ok5" eventType="touchUpInside" id="Uqj-qb-t9f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="BJx-q0-iaT" secondAttribute="leading" id="39k-Wy-FCT"/>
+                            <constraint firstItem="BJx-q0-iaT" firstAttribute="top" secondItem="FEK-q8-nbz" secondAttribute="bottom" constant="34" id="Cu9-2S-EWA"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="centerX" secondItem="wQJ-e3-yNj" secondAttribute="centerX" id="HKC-t0-6WU"/>
+                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="trailing" secondItem="BJx-q0-iaT" secondAttribute="trailing" id="Orh-uf-Zg7"/>
+                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="10" id="POx-k5-wU1"/>
+                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="10" id="Q7N-NN-Fdf"/>
+                            <constraint firstItem="wQJ-e3-yNj" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="5" id="W1o-bV-KcI"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="BW1-MU-Ndw" secondAttribute="leading" id="jmO-CT-lnx"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="top" secondItem="BW1-MU-Ndw" secondAttribute="bottom" constant="8" symbolic="YES" id="mO2-L7-lRp"/>
+                            <constraint firstItem="wQJ-e3-yNj" firstAttribute="top" secondItem="BJx-q0-iaT" secondAttribute="bottom" constant="13" id="pX2-ko-yRx"/>
+                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" id="qpD-oP-L0H"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Metronome" image="metronome.png" id="FWV-Px-2x7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0de-ZR-zVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="-10"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kuH-oE-Xez">
+            <objects>
+                <tabBarController id="y57-AX-dVh" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="YMD-Vc-L4p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1MY-NV-wbh" kind="relationship" relationship="viewControllers" id="WvT-66-2Xz"/>
+                        <segue destination="qT0-Jv-ok5" kind="relationship" relationship="viewControllers" id="rvm-tu-OCb"/>
+                        <segue destination="nC3-py-3ia" kind="relationship" relationship="viewControllers" id="IEE-ED-zeA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LG-jf-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about.png" width="30" height="30"/>
+        <image name="drum.png" width="30" height="30"/>
+        <image name="grand-prize-kit.png" width="500" height="301"/>
+        <image name="metronome.png" width="30" height="30"/>
+    </resources>
+</document>
