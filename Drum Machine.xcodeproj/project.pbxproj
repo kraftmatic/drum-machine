@@ -12,6 +12,8 @@
 		C4D3357A1A34AB0300E0C5A3 /* MetronomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D335791A34AB0300E0C5A3 /* MetronomeDelegate.swift */; };
 		C4D3357D1A34B24700E0C5A3 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4D3357C1A34B24700E0C5A3 /* beep.wav */; };
 		C4D335811A35456600E0C5A3 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4D335801A35456600E0C5A3 /* tick.mp3 */; };
+		C4D335881A35637700E0C5A3 /* led-off-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335861A35637700E0C5A3 /* led-off-15.png */; };
+		C4D335891A35637700E0C5A3 /* led-on-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335871A35637700E0C5A3 /* led-on-15.png */; };
 		C4F42C2C1A27E21900D38EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42C2B1A27E21900D38EE3 /* AppDelegate.swift */; };
 		C4F42C311A27E21900D38EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C2F1A27E21900D38EE3 /* Main.storyboard */; };
 		C4F42C331A27E21900D38EE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C321A27E21900D38EE3 /* Images.xcassets */; };
@@ -39,6 +41,8 @@
 		C4D335791A34AB0300E0C5A3 /* MetronomeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeDelegate.swift; sourceTree = "<group>"; };
 		C4D3357C1A34B24700E0C5A3 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		C4D335801A35456600E0C5A3 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
+		C4D335861A35637700E0C5A3 /* led-off-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-off-15.png"; sourceTree = "<group>"; };
+		C4D335871A35637700E0C5A3 /* led-on-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-on-15.png"; sourceTree = "<group>"; };
 		C4F42C261A27E21800D38EE3 /* Drum Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drum Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F42C2A1A27E21900D38EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4F42C2B1A27E21900D38EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 		C4F42C4B1A27E64000D38EE3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C4D335861A35637700E0C5A3 /* led-off-15.png */,
+				C4D335871A35637700E0C5A3 /* led-on-15.png */,
 				C4F42C691A27FB0200D38EE3 /* grand-prize-kit.png */,
 				C4F42C651A27EE3400D38EE3 /* drum.png */,
 				C4F42C5D1A27EB3C00D38EE3 /* about.png */,
@@ -265,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F42C6A1A27FB0200D38EE3 /* grand-prize-kit.png in Resources */,
+				C4D335881A35637700E0C5A3 /* led-off-15.png in Resources */,
+				C4D335891A35637700E0C5A3 /* led-on-15.png in Resources */,
 				C4D335811A35456600E0C5A3 /* tick.mp3 in Resources */,
 				C4F42C311A27E21900D38EE3 /* Main.storyboard in Resources */,
 				C4F42C361A27E21900D38EE3 /* LaunchScreen.xib in Resources */,
