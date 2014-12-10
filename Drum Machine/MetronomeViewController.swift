@@ -15,9 +15,11 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var bpmField: UITextField!
     @IBOutlet weak var startButton: UIButton!
+    
+    
+    
     var metronome: MetronomeModel = MetronomeModel()
     var audioPlayer = AVAudioPlayer()
-    
     var metronomeStarted: Bool = false;
     
     override init (){
