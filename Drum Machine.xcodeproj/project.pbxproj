@@ -14,6 +14,8 @@
 		C4D335811A35456600E0C5A3 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4D335801A35456600E0C5A3 /* tick.mp3 */; };
 		C4D335881A35637700E0C5A3 /* led-off-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335861A35637700E0C5A3 /* led-off-15.png */; };
 		C4D335891A35637700E0C5A3 /* led-on-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335871A35637700E0C5A3 /* led-on-15.png */; };
+		C4D3358B1A35E1CF00E0C5A3 /* DrumMachineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */; };
+		C4D3358D1A35E32100E0C5A3 /* DrumMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3358C1A35E32100E0C5A3 /* DrumMachineController.swift */; };
 		C4F42C2C1A27E21900D38EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42C2B1A27E21900D38EE3 /* AppDelegate.swift */; };
 		C4F42C311A27E21900D38EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C2F1A27E21900D38EE3 /* Main.storyboard */; };
 		C4F42C331A27E21900D38EE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C321A27E21900D38EE3 /* Images.xcassets */; };
@@ -43,6 +45,8 @@
 		C4D335801A35456600E0C5A3 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
 		C4D335861A35637700E0C5A3 /* led-off-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-off-15.png"; sourceTree = "<group>"; };
 		C4D335871A35637700E0C5A3 /* led-on-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-on-15.png"; sourceTree = "<group>"; };
+		C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrumMachineButton.swift; sourceTree = "<group>"; };
+		C4D3358C1A35E32100E0C5A3 /* DrumMachineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrumMachineController.swift; sourceTree = "<group>"; };
 		C4F42C261A27E21800D38EE3 /* Drum Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drum Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F42C2A1A27E21900D38EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4F42C2B1A27E21900D38EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				C40ACE7B1A33A1FE001F1408 /* MetronomeViewController.swift */,
+				C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */,
+				C4D3358C1A35E32100E0C5A3 /* DrumMachineController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,7 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40ACE7C1A33A1FE001F1408 /* MetronomeViewController.swift in Sources */,
+				C4D3358D1A35E32100E0C5A3 /* DrumMachineController.swift in Sources */,
 				C40ACE791A339BFF001F1408 /* MetronomeModel.swift in Sources */,
+				C4D3358B1A35E1CF00E0C5A3 /* DrumMachineButton.swift in Sources */,
 				C4F42C2C1A27E21900D38EE3 /* AppDelegate.swift in Sources */,
 				C4D3357A1A34AB0300E0C5A3 /* MetronomeDelegate.swift in Sources */,
 			);

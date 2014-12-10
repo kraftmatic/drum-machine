@@ -8,7 +8,7 @@
         <!--Drum Machine-->
         <scene sceneID="c7V-aQ-cHB">
             <objects>
-                <viewController id="nC3-py-3ia" sceneMemberID="viewController">
+                <viewController id="nC3-py-3ia" customClass="DrumMachineController" customModule="Drum_Machine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZMB-Fl-f5S"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ym-zT-j30"/>
@@ -17,365 +17,545 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0t-9J-wf8">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0t-9J-wf8" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="99" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="fu8-wF-gkq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGM-Tu-dk1">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGM-Tu-dk1" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="122" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="QPA-Fa-Hfg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n9-wt-OBH">
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n9-wt-OBH" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="145" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="bXx-gW-2zb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-jE-Xve">
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-jE-Xve" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="168" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="dHG-gC-zwV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baf-C0-lRq">
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baf-C0-lRq" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="211" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Dzu-Ck-yXh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-Xw-ql5">
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-Xw-ql5" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="234" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Ls0-ag-4br"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nha-WA-bux">
+                            <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nha-WA-bux" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="257" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="J28-PN-Gix"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-oB-LGb">
+                            <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-oB-LGb" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="280" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="8ve-mD-ox4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-qM-NGu">
+                            <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-qM-NGu" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="318" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="oVr-s2-iVe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXn-yG-DA2">
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXn-yG-DA2" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="341" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Ig4-LC-kBj"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-Yq-uAK">
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-Yq-uAK" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="364" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="AGl-Mx-26M"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-KE-4hu">
+                            <button opaque="NO" tag="112" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-KE-4hu" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="387" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="e31-1p-D4l"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-KQ-V47">
+                            <button opaque="NO" tag="201" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-KQ-V47" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="99" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="52D-Nz-dd7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFG-Xd-m8j">
+                            <button opaque="NO" tag="202" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFG-Xd-m8j" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="122" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="fg1-Ka-af9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-9o-5Vc">
+                            <button opaque="NO" tag="203" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-9o-5Vc" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="145" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="gm6-lr-IRa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEz-U1-dKx">
+                            <button opaque="NO" tag="204" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEz-U1-dKx" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="168" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="L7c-dL-joK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFx-Bz-mDl">
+                            <button opaque="NO" tag="205" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFx-Bz-mDl" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="211" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="t2w-3j-c7B"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybp-wu-ghh">
+                            <button opaque="NO" tag="206" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybp-wu-ghh" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="234" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="ZKD-wV-Iyn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-HR-Dhg">
+                            <button opaque="NO" tag="207" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-HR-Dhg" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="257" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="rtf-7M-80s"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of8-sP-EwT">
+                            <button opaque="NO" tag="208" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of8-sP-EwT" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="280" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="uwo-xn-cO6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMW-Qk-l6S">
+                            <button opaque="NO" tag="209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMW-Qk-l6S" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="318" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="chs-YN-NKT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a9-mD-uJt">
+                            <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a9-mD-uJt" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="341" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="iU8-Mq-RSe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-a5-3in">
+                            <button opaque="NO" tag="211" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-a5-3in" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="364" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="YrG-VJ-8cb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-Gr-KDd">
+                            <button opaque="NO" tag="212" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-Gr-KDd" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="387" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="jWV-lh-yIg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-Sw-PQ8">
+                            <button opaque="NO" tag="302" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-Sw-PQ8" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="99" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="hu0-S6-QZb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKI-lI-Tb1">
+                            <button opaque="NO" tag="302" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKI-lI-Tb1" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="122" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="i0e-BM-7Tg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be3-cc-Wml">
+                            <button opaque="NO" tag="303" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be3-cc-Wml" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="145" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="ZMu-vz-Ade"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBc-X2-cse">
+                            <button opaque="NO" tag="304" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBc-X2-cse" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="168" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="0KN-a3-pKP"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arl-bc-Ose">
+                            <button opaque="NO" tag="305" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arl-bc-Ose" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="211" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="2A1-OV-5SD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdH-L0-Wsi">
+                            <button opaque="NO" tag="306" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdH-L0-Wsi" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="234" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="9zO-lz-QWI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4L-sQ-rHm">
+                            <button opaque="NO" tag="307" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4L-sQ-rHm" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="257" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="67o-Pu-6fg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11K-x0-DEv">
+                            <button opaque="NO" tag="308" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11K-x0-DEv" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="280" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="321-Of-BKX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR4-Uz-98M">
+                            <button opaque="NO" tag="309" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR4-Uz-98M" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="318" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="rMq-ou-ZZa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-Sg-X3s">
+                            <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-Sg-X3s" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="341" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="w4i-ug-S6H"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-rt-d6Y">
+                            <button opaque="NO" tag="311" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-rt-d6Y" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="364" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="IFm-6d-Leb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pO-gr-Z1y">
+                            <button opaque="NO" tag="312" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pO-gr-Z1y" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="387" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="rgb-Rt-xXJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHR-1d-Tt0">
+                            <button opaque="NO" tag="401" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHR-1d-Tt0" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="99" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="jtP-N8-Uoa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmo-Qp-HQZ">
+                            <button opaque="NO" tag="402" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmo-Qp-HQZ" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="122" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="nyC-9Q-B67"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AP-Yt-8Uq">
+                            <button opaque="NO" tag="403" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AP-Yt-8Uq" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="145" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="wJa-NW-fVw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-fe-UXl">
+                            <button opaque="NO" tag="404" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-fe-UXl" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="168" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Hza-Tp-SAe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-Fy-p6K">
+                            <button opaque="NO" tag="405" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-Fy-p6K" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="211" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="zlj-Dp-4zl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBj-vn-MBh">
+                            <button opaque="NO" tag="406" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBj-vn-MBh" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="234" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="jsf-Dl-AMt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSF-Wh-eRl">
+                            <button opaque="NO" tag="407" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSF-Wh-eRl" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="257" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="KBp-Jk-0Kb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-Lw-rUy">
+                            <button opaque="NO" tag="408" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-Lw-rUy" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="280" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="S0O-5u-VgP"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-RZ-mbW">
+                            <button opaque="NO" tag="409" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-RZ-mbW" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="318" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="4If-M8-Iaz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-jl-03R">
+                            <button opaque="NO" tag="410" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-jl-03R" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="341" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="gys-HW-WZk"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-Tc-Lng">
+                            <button opaque="NO" tag="411" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-Tc-Lng" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="364" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="AWm-mm-aBd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4av-3l-7Xd">
+                            <button opaque="NO" tag="412" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4av-3l-7Xd" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="387" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="9PJ-gp-h0V"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-wY-VzS">
+                            <button opaque="NO" tag="501" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-wY-VzS" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="99" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="fL2-yl-Irm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw5-y9-AhX">
+                            <button opaque="NO" tag="502" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw5-y9-AhX" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="122" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="JEk-ki-aKp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXN-Ew-1oL">
+                            <button opaque="NO" tag="503" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXN-Ew-1oL" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="145" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Tvo-nN-eWD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-bG-iTa">
+                            <button opaque="NO" tag="504" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-bG-iTa" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="168" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="F33-49-dhR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqS-0k-XWt">
+                            <button opaque="NO" tag="505" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqS-0k-XWt" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="211" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="8Lv-Dy-JxL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3X-WF-iZr">
+                            <button opaque="NO" tag="506" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3X-WF-iZr" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="234" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="pTB-ym-R7i"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJq-Ll-pWp">
+                            <button opaque="NO" tag="507" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJq-Ll-pWp" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="257" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="scB-Y3-P6c"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-xQ-g50">
+                            <button opaque="NO" tag="508" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-xQ-g50" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="280" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="uM5-9S-8aU"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-U4-BbG">
+                            <button opaque="NO" tag="509" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-U4-BbG" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="318" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="TGO-nu-v2R"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGO-sp-BYv">
+                            <button opaque="NO" tag="510" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGO-sp-BYv" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="341" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="IYK-5F-Fwy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBB-SB-mGj">
+                            <button opaque="NO" tag="511" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBB-SB-mGj" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="364" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="3lg-xX-2jZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nup-sb-dDc">
+                            <button opaque="NO" tag="512" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nup-sb-dDc" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="387" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="VnO-7P-OkA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi Hat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-ek-bYo">
                                 <rect key="frame" x="16" y="73" width="62" height="21"/>
@@ -407,125 +587,185 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amU-Dk-7E5">
+                            <button opaque="NO" tag="113" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amU-Dk-7E5" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="427" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="go8-Zv-rPb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-Fm-LJL">
+                            <button opaque="NO" tag="114" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-Fm-LJL" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="450" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="2jN-0B-yQq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-JQ-Fxg">
+                            <button opaque="NO" tag="115" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-JQ-Fxg" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="473" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="aYo-4L-Q2W"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m41-HF-6UI">
+                            <button opaque="NO" tag="116" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m41-HF-6UI" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="496" y="73" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="BMz-Cx-ab7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-y3-3Fd">
+                            <button opaque="NO" tag="213" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-y3-3Fd" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="427" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Mcd-pw-7P4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-Gm-XNg">
+                            <button opaque="NO" tag="214" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-Gm-XNg" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="450" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="scP-YS-rtn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-Ei-f6K">
+                            <button opaque="NO" tag="215" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-Ei-f6K" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="473" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="JBa-Bl-iwI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAo-tY-8KJ">
+                            <button opaque="NO" tag="216" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAo-tY-8KJ" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="496" y="103" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="FEa-Sh-2aJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-qE-e98">
+                            <button opaque="NO" tag="313" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-qE-e98" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="427" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Hcg-uL-2vV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-fw-cb2">
+                            <button opaque="NO" tag="314" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-fw-cb2" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="450" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="aZV-za-Qad"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kv-0Y-ASY">
+                            <button opaque="NO" tag="315" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kv-0Y-ASY" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="473" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="M3a-NR-afZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7u-I1-WYz">
+                            <button opaque="NO" tag="316" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7u-I1-WYz" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="496" y="133" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="mQc-2t-JOM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-Uk-2mK">
+                            <button opaque="NO" tag="413" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-Uk-2mK" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="427" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="5jl-Uq-HtX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zl-LF-bDj">
+                            <button opaque="NO" tag="414" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zl-LF-bDj" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="450" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="H4R-0K-a41"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-VH-ZAw">
+                            <button opaque="NO" tag="415" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-VH-ZAw" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="473" y="163" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="rmO-jO-GlE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-4Y-oZE">
-                                <rect key="frame" x="496" y="163" width="15" height="22"/>
-                                <state key="normal" image="led-off-15.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPJ-mS-gU4">
+                            <button opaque="NO" tag="513" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPJ-mS-gU4" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="427" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="xlL-Cc-3iD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfj-hN-n1Q">
+                            <button opaque="NO" tag="514" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfj-hN-n1Q" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="450" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="4Yd-WK-BhG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzd-dz-OGP">
+                            <button opaque="NO" tag="515" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzd-dz-OGP" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="473" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="tHa-ub-IRR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ky-k0-sKf">
+                            <button opaque="NO" tag="516" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ky-k0-sKf" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
                                 <rect key="frame" x="496" y="193" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="PLd-Mk-2gW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="416" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-4Y-oZE" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
+                                <rect key="frame" x="496" y="163" width="15" height="22"/>
+                                <state key="normal" image="led-off-15.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="Gyg-Pa-1e9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -613,6 +853,7 @@
                                     <segment title="3/4"/>
                                     <segment title="4/4"/>
                                 </segments>
+                                <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Signature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-e3-yNj">
                                 <rect key="frame" x="21" y="164" width="179" height="21"/>
