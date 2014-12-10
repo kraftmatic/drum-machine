@@ -25,6 +25,8 @@
 		C4F42C621A27EB3C00D38EE3 /* metronome.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C5F1A27EB3C00D38EE3 /* metronome.png */; };
 		C4F42C661A27EE3400D38EE3 /* drum.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C651A27EE3400D38EE3 /* drum.png */; };
 		C4F42C6A1A27FB0200D38EE3 /* grand-prize-kit.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F42C691A27FB0200D38EE3 /* grand-prize-kit.png */; };
+		C4F8BF631A37F66E00771C8D /* DrumMachineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8BF621A37F66E00771C8D /* DrumMachineModel.swift */; };
+		C4F8BF651A3800BA00771C8D /* DrumMachineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8BF641A3800BA00771C8D /* DrumMachineDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		C4F42C5F1A27EB3C00D38EE3 /* metronome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metronome.png; sourceTree = "<group>"; };
 		C4F42C651A27EE3400D38EE3 /* drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum.png; sourceTree = "<group>"; };
 		C4F42C691A27FB0200D38EE3 /* grand-prize-kit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grand-prize-kit.png"; sourceTree = "<group>"; };
+		C4F8BF621A37F66E00771C8D /* DrumMachineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrumMachineModel.swift; sourceTree = "<group>"; };
+		C4F8BF641A3800BA00771C8D /* DrumMachineDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrumMachineDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C40ACE781A339BFF001F1408 /* MetronomeModel.swift */,
+				C4F8BF621A37F66E00771C8D /* DrumMachineModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C4D335791A34AB0300E0C5A3 /* MetronomeDelegate.swift */,
+				C4F8BF641A3800BA00771C8D /* DrumMachineDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 				C4D3358D1A35E32100E0C5A3 /* DrumMachineController.swift in Sources */,
 				C40ACE791A339BFF001F1408 /* MetronomeModel.swift in Sources */,
 				C4D3358B1A35E1CF00E0C5A3 /* DrumMachineButton.swift in Sources */,
+				C4F8BF651A3800BA00771C8D /* DrumMachineDelegate.swift in Sources */,
 				C4F42C2C1A27E21900D38EE3 /* AppDelegate.swift in Sources */,
+				C4F8BF631A37F66E00771C8D /* DrumMachineModel.swift in Sources */,
 				C4D3357A1A34AB0300E0C5A3 /* MetronomeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
