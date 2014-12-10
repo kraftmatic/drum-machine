@@ -14,7 +14,7 @@ class MetronomeModel: NSObject {
     var timer: NSTimer;
     
     override init() {
-        self.timer = NSTimer();
+        timer = NSTimer();
         super.init()
     }
 
@@ -28,7 +28,7 @@ class MetronomeModel: NSObject {
         timer.invalidate()
     }
     
-    func fireTick(){
+    private func fireTick(){
         delegate?.metronomeTick()
     }
     

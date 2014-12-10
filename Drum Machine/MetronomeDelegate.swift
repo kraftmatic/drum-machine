@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Enterprise Holdings Inc. All rights reserved.
 //
 
-
 protocol MetronomeDelegate {
     func metronomeTick()
 }

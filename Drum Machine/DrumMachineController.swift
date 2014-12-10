@@ -8,10 +8,11 @@
 
 import UIKit
 
-class DrumMachineController: UIViewController {
+class DrumMachineController: UIViewController, DrumMachineDelegate {
+    
+    var drumMachine: DrumMachineModel = DrumMachineModel()
 
     @IBAction func isClicked(sender: DrumMachineButton) {
-        
         if sender.isActive == false {
             sender.setImage(UIImage(named: "led-on-15.png"), forState: UIControlState.Normal)
             sender.isActive = true
@@ -19,6 +20,21 @@ class DrumMachineController: UIViewController {
             sender.setImage(UIImage(named: "led-off-15.png"), forState: UIControlState.Normal)
             sender.isActive = false
         }
-        
     }
+    
+    func playSoundOne() {
+    }
+    
+    func playSoundTwo() {
+    }
+    
+    func playSoundThree() {
+    }
+    
+    func playSoundFour() {
+    }
+    
+    func playSoundFive() {
+    }
+    
 }
