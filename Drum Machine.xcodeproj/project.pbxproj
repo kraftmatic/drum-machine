@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		C40ACE791A339BFF001F1408 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40ACE781A339BFF001F1408 /* MetronomeModel.swift */; };
 		C40ACE7C1A33A1FE001F1408 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40ACE7B1A33A1FE001F1408 /* MetronomeViewController.swift */; };
+		C4C4B5131A394D97009D6BA7 /* hihat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4C4B5121A394D97009D6BA7 /* hihat.mp3 */; };
+		C4C4B5151A395A1C009D6BA7 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4C4B5141A395A1C009D6BA7 /* kick.wav */; };
+		C4C4B5191A395CDA009D6BA7 /* sticks.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4C4B5161A395CDA009D6BA7 /* sticks.wav */; };
+		C4C4B51A1A395CDA009D6BA7 /* tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4C4B5171A395CDA009D6BA7 /* tom.wav */; };
+		C4C4B51B1A395CDA009D6BA7 /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4C4B5181A395CDA009D6BA7 /* snare.wav */; };
 		C4D3357A1A34AB0300E0C5A3 /* MetronomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D335791A34AB0300E0C5A3 /* MetronomeDelegate.swift */; };
-		C4D3357D1A34B24700E0C5A3 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4D3357C1A34B24700E0C5A3 /* beep.wav */; };
 		C4D335811A35456600E0C5A3 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4D335801A35456600E0C5A3 /* tick.mp3 */; };
 		C4D335881A35637700E0C5A3 /* led-off-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335861A35637700E0C5A3 /* led-off-15.png */; };
 		C4D335891A35637700E0C5A3 /* led-on-15.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D335871A35637700E0C5A3 /* led-on-15.png */; };
@@ -42,8 +46,12 @@
 /* Begin PBXFileReference section */
 		C40ACE781A339BFF001F1408 /* MetronomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
 		C40ACE7B1A33A1FE001F1408 /* MetronomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		C4C4B5121A394D97009D6BA7 /* hihat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hihat.mp3; sourceTree = "<group>"; };
+		C4C4B5141A395A1C009D6BA7 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		C4C4B5161A395CDA009D6BA7 /* sticks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sticks.wav; sourceTree = "<group>"; };
+		C4C4B5171A395CDA009D6BA7 /* tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tom.wav; sourceTree = "<group>"; };
+		C4C4B5181A395CDA009D6BA7 /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
 		C4D335791A34AB0300E0C5A3 /* MetronomeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeDelegate.swift; sourceTree = "<group>"; };
-		C4D3357C1A34B24700E0C5A3 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		C4D335801A35456600E0C5A3 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
 		C4D335861A35637700E0C5A3 /* led-off-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-off-15.png"; sourceTree = "<group>"; };
 		C4D335871A35637700E0C5A3 /* led-on-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "led-on-15.png"; sourceTree = "<group>"; };
@@ -97,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				C40ACE7B1A33A1FE001F1408 /* MetronomeViewController.swift */,
-				C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */,
 				C4D3358C1A35E32100E0C5A3 /* DrumMachineController.swift */,
+				C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -115,8 +123,12 @@
 		C4D3357B1A34B23400E0C5A3 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				C4C4B5161A395CDA009D6BA7 /* sticks.wav */,
+				C4C4B5171A395CDA009D6BA7 /* tom.wav */,
+				C4C4B5181A395CDA009D6BA7 /* snare.wav */,
+				C4C4B5141A395A1C009D6BA7 /* kick.wav */,
+				C4C4B5121A394D97009D6BA7 /* hihat.mp3 */,
 				C4D335801A35456600E0C5A3 /* tick.mp3 */,
-				C4D3357C1A34B24700E0C5A3 /* beep.wav */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -285,14 +297,18 @@
 				C4F42C6A1A27FB0200D38EE3 /* grand-prize-kit.png in Resources */,
 				C4D335881A35637700E0C5A3 /* led-off-15.png in Resources */,
 				C4D335891A35637700E0C5A3 /* led-on-15.png in Resources */,
+				C4C4B51A1A395CDA009D6BA7 /* tom.wav in Resources */,
 				C4D335811A35456600E0C5A3 /* tick.mp3 in Resources */,
+				C4C4B51B1A395CDA009D6BA7 /* snare.wav in Resources */,
+				C4C4B5131A394D97009D6BA7 /* hihat.mp3 in Resources */,
 				C4F42C311A27E21900D38EE3 /* Main.storyboard in Resources */,
 				C4F42C361A27E21900D38EE3 /* LaunchScreen.xib in Resources */,
 				C4F42C331A27E21900D38EE3 /* Images.xcassets in Resources */,
+				C4C4B5191A395CDA009D6BA7 /* sticks.wav in Resources */,
 				C4F42C621A27EB3C00D38EE3 /* metronome.png in Resources */,
+				C4C4B5151A395A1C009D6BA7 /* kick.wav in Resources */,
 				C4F42C601A27EB3C00D38EE3 /* about.png in Resources */,
 				C4F42C661A27EE3400D38EE3 /* drum.png in Resources */,
-				C4D3357D1A34B24700E0C5A3 /* beep.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

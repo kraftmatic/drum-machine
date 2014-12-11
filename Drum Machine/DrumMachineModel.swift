@@ -13,7 +13,7 @@ class DrumMachineModel: NSObject {
     var delegate: DrumMachineDelegate?
     var machineDictionary: Dictionary<String, Bool>
     var timer: NSTimer
-    var barNumber: Int = 1
+    var barNumber: Int = 0
     
     override init(){
 
@@ -43,11 +43,12 @@ class DrumMachineModel: NSObject {
         timer = NSTimer.scheduledTimerWithTimeInterval(timing, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
     }
     
-    private func fireTick(){
+    func fireTick(){
         barNumber++
         if barNumber == 17 {
             barNumber = 1
         }
+        println("fireTick")
         
         for row in 1...5 {
             var cellBuilder = row * 100
