@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y57-AX-dVh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Drum Machine-->
@@ -838,17 +837,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="120" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-MU-Ndw">
-                                <rect key="frame" x="16" y="30" width="230" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="104-jc-hWW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-q8-nbz">
-                                <rect key="frame" x="16" y="68" width="189" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Set BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-q8-nbz">
+                                <rect key="frame" x="120" y="66" width="189" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pba-3W-jdY"/>
                                 </constraints>
@@ -856,8 +846,17 @@
                                 <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BJx-q0-iaT">
-                                <rect key="frame" x="16" y="123" width="230" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Set Offset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-Fb-pU0">
+                                <rect key="frame" x="120" y="147" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="13x-Dc-PbE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BJx-q0-iaT">
+                                <rect key="frame" x="16" y="250" width="230" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="2/4"/>
@@ -866,8 +865,8 @@
                                 </segments>
                                 <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Signature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-e3-yNj">
-                                <rect key="frame" x="21" y="164" width="179" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time Signature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-e3-yNj">
+                                <rect key="frame" x="28" y="314" width="179" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QN2-CE-x7I"/>
                                     <constraint firstAttribute="width" constant="179" id="wor-pm-tXA"/>
@@ -876,7 +875,7 @@
                                 <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Sd-dL3">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Sd-dL3">
                                 <rect key="frame" x="455" y="37" width="94" height="70"/>
                                 <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -887,35 +886,52 @@
                                     <action selector="startButtonPressed:" destination="qT0-Jv-ok5" eventType="touchUpInside" id="Uqj-qb-t9f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-kC-ABO">
-                                <rect key="frame" x="455" y="115" width="94" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-kC-ABO">
+                                <rect key="frame" x="517" y="149" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="60" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-Pz-SpA">
+                                <rect key="frame" x="14" y="28" width="400" height="31"/>
+                                <connections>
+                                    <action selector="bpmChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="FTi-Oy-53f"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-1P-qnh">
+                                <rect key="frame" x="14" y="109" width="400" height="31"/>
+                                <connections>
+                                    <action selector="offsetChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="kS5-B1-fDc"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPM:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-K8-Ro4">
+                                <rect key="frame" x="455" y="150" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offset:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uX1-nP-vnu">
+                                <rect key="frame" x="455" y="179" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-sY-OX5">
+                                <rect key="frame" x="517" y="179" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="BJx-q0-iaT" secondAttribute="leading" id="39k-Wy-FCT"/>
-                            <constraint firstItem="BJx-q0-iaT" firstAttribute="top" secondItem="FEK-q8-nbz" secondAttribute="bottom" constant="34" id="Cu9-2S-EWA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r8B-Sd-dL3" secondAttribute="trailing" constant="35" id="Ed7-QW-t2Z"/>
-                            <constraint firstItem="FEK-q8-nbz" firstAttribute="centerX" secondItem="wQJ-e3-yNj" secondAttribute="centerX" id="HKC-t0-6WU"/>
-                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="trailing" secondItem="BJx-q0-iaT" secondAttribute="trailing" id="Orh-uf-Zg7"/>
-                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="10" id="POx-k5-wU1"/>
-                            <constraint firstItem="r8B-Sd-dL3" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="35" id="PW0-XM-GnO"/>
-                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="10" id="Q7N-NN-Fdf"/>
-                            <constraint firstItem="wQJ-e3-yNj" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="5" id="W1o-bV-KcI"/>
-                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="BW1-MU-Ndw" secondAttribute="leading" id="jmO-CT-lnx"/>
-                            <constraint firstItem="FEK-q8-nbz" firstAttribute="top" secondItem="BW1-MU-Ndw" secondAttribute="bottom" constant="8" symbolic="YES" id="mO2-L7-lRp"/>
-                            <constraint firstItem="wQJ-e3-yNj" firstAttribute="top" secondItem="BJx-q0-iaT" secondAttribute="bottom" constant="13" id="pX2-ko-yRx"/>
-                            <constraint firstItem="BW1-MU-Ndw" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" id="qpD-oP-L0H"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Metronome" image="metronome.png" id="FWV-Px-2x7"/>
                     <connections>
-                        <outlet property="bpmField" destination="BW1-MU-Ndw" id="vah-Zb-GTk"/>
                         <outlet property="bpmLabel" destination="Rrm-kC-ABO" id="ziM-4r-mU4"/>
-                        <outlet property="startButton" destination="r8B-Sd-dL3" id="uB1-IZ-nOH"/>
+                        <outlet property="bpmSlider" destination="NRm-Pz-SpA" id="m9S-eV-XrC"/>
+                        <outlet property="offsetLabel" destination="4Ab-sY-OX5" id="fnr-fZ-nvw"/>
+                        <outlet property="offsetSlider" destination="4qV-1P-qnh" id="BV0-YW-l1p"/>
+                        <outlet property="startButton" destination="r8B-Sd-dL3" id="0Yi-gs-pf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0de-ZR-zVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
