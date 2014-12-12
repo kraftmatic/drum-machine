@@ -43,6 +43,10 @@ class DrumMachineModel: NSObject {
         timer = NSTimer.scheduledTimerWithTimeInterval(timing, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
     }
     
+    func stopDrumMachine(){
+        timer.invalidate()
+    }
+    
     func fireTick(){
         barNumber++
         if barNumber == 17 {

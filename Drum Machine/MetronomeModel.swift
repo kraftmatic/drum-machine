@@ -12,15 +12,18 @@ class MetronomeModel: NSObject {
     
     var delegate: MetronomeDelegate?
     var timer: NSTimer;
+    var beatOffset: Double = 0.0
+    var bpmDouble: Double = 0.0
     
     override init() {
         timer = NSTimer();
         super.init()
     }
 
-    func startMetronome(bpm: Int) {
-        var bpmDouble: Double = Double(bpm)
-        var timing: NSTimeInterval = 60.0 / bpmDouble
+    func startMetronome(bpm: Int, offset: Double) {
+        beatOffset = offset
+        bpmDouble = Double(bpm)
+        var timing: NSTimeInterval = 120.0 / bpmDouble
         timer = NSTimer.scheduledTimerWithTimeInterval(timing, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
     }
     
@@ -29,6 +32,12 @@ class MetronomeModel: NSObject {
     }
     
     func fireTick(){
+        delegate?.metronomeTick()
+        var offsetTiming: NSTimeInterval = ((120 / bpmDouble) / 2) + (((120.0 / bpmDouble) / 2) * beatOffset)
+        var offsetTimer = NSTimer.scheduledTimerWithTimeInterval(offsetTiming, target: self, selector: Selector("fireOffsetTick"), userInfo: nil, repeats: false)
+    }
+    
+    func fireOffsetTick(){
         delegate?.metronomeTick()
     }
     

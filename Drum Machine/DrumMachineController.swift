@@ -12,6 +12,7 @@ import AVFoundation
 class DrumMachineController: UIViewController, DrumMachineDelegate {
     
     var drumMachine: DrumMachineModel = DrumMachineModel()
+    var machineRunning: Bool = false;
     var hihatPlayer = AVAudioPlayer()
     var kickPlayer = AVAudioPlayer()
     var snarePlayer = AVAudioPlayer()
@@ -23,7 +24,13 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
     }
 
     @IBAction func startButtonClicked(sender: AnyObject) {
-        drumMachine.startDrumMachine(120)
+        if !machineRunning{
+            drumMachine.startDrumMachine(240)
+            machineRunning = true;
+        } else{
+            drumMachine.stopDrumMachine()
+            machineRunning = false;
+        }
     }
     
     
