@@ -99,5 +99,23 @@ class DrumMachineModel: NSObject {
         }
         
     }
+    
+    func persistDrumPatternInSlot(slotNumber: Int){
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let bankLabel = "bank" + String(format: "%f", slotNumber)
+        
+        userDefaults.setObject(machineDictionary, forKey: bankLabel)
+    }
+    
+    func loadDrumPatternFromSlot(slotNumber: Int){
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let bankLabel = "bank" + String(format: "%f", slotNumber)
+        
+        // machineDictionary = userDefaults.dictionaryForKey(bankLabel)  // Need to pull dictionary back from the user defaults
+        
+        delegate?.updateBoard(machineDictionary)
+    }
 
 }
