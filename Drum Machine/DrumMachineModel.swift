@@ -14,6 +14,8 @@ class DrumMachineModel: NSObject {
     var machineDictionary: Dictionary<String, Bool>
     var timer: NSTimer
     var barNumber: Int = 0
+    var beatOffset: Double = 0.0
+    var bpmDouble: Double = 0.0
     
     override init(){
 
@@ -37,9 +39,11 @@ class DrumMachineModel: NSObject {
         machineDictionary.updateValue(valueBool, forKey: valueName)
     }
     
-    func startDrumMachine(bpm: Int) {
-        var bpmDouble: Double = Double(bpm)
-        var timing: NSTimeInterval = 60.0 / bpmDouble
+    func startDrumMachine(bpm: Int, offset: Double) {
+        beatOffset = offset
+        bpmDouble = Double(bpm)
+        var timing: NSTimeInterval = 120 / bpmDouble
+        barNumber = 0
         timer = NSTimer.scheduledTimerWithTimeInterval(timing, target: self, selector: Selector("fireTick"), userInfo: nil, repeats: true)
     }
     
@@ -52,7 +56,6 @@ class DrumMachineModel: NSObject {
         if barNumber == 17 {
             barNumber = 1
         }
-        println("fireTick")
         
         for row in 1...5 {
             var cellBuilder = row * 100
@@ -64,6 +67,32 @@ class DrumMachineModel: NSObject {
                     case 3: delegate?.playSoundThree()
                     case 4: delegate?.playSoundFour()
                     case 5: delegate?.playSoundFive()
+                default: println("Uh oh...")
+                }
+            }
+        }
+        
+        var offsetTiming: NSTimeInterval = ((120 / bpmDouble) / 2) + (((120.0 / bpmDouble) / 2) * beatOffset)
+        var offsetTimer = NSTimer.scheduledTimerWithTimeInterval(offsetTiming, target: self, selector: Selector("fireOffsetTick"), userInfo: nil, repeats: false)
+    }
+    
+    func fireOffsetTick(){
+        
+        barNumber++
+        if barNumber == 17 {
+            barNumber = 1
+        }
+        
+        for row in 1...5 {
+            var cellBuilder = row * 100
+            cellBuilder += barNumber
+            if machineDictionary[String(cellBuilder)] == true {
+                switch row {
+                case 1: delegate?.playSoundOne()
+                case 2: delegate?.playSoundTwo()
+                case 3: delegate?.playSoundThree()
+                case 4: delegate?.playSoundFour()
+                case 5: delegate?.playSoundFive()
                 default: println("Uh oh...")
                 }
             }
