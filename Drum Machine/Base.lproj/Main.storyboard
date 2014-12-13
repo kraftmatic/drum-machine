@@ -767,7 +767,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3U-qu-MTU">
-                                <rect key="frame" x="280" y="273" width="46" height="30"/>
+                                <rect key="frame" x="538" y="73" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Start">
@@ -777,10 +777,60 @@
                                     <action selector="startButtonClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="L63-ag-BHG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Set BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO9-iH-VdJ">
+                                <rect key="frame" x="120" y="259" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XIS-bX-1Zf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Set Offset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-gb-L5l">
+                                <rect key="frame" x="120" y="340" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9iH-2z-ge1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="60" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-4j-oZ1">
+                                <rect key="frame" x="14" y="222" width="400" height="31"/>
+                                <connections>
+                                    <action selector="bpmChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="JbT-ha-FVi"/>
+                                    <action selector="bpmChanged:" destination="nC3-py-3ia" eventType="valueChanged" id="klO-s3-dpz"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-KE-2Ds">
+                                <rect key="frame" x="14" y="303" width="400" height="31"/>
+                                <connections>
+                                    <action selector="offsetChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="Gjm-2b-eNg"/>
+                                    <action selector="offsetChanged:" destination="nC3-py-3ia" eventType="valueChanged" id="nFk-Ia-Gq2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1T4-NF-aFH">
+                                <rect key="frame" x="469" y="307" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ul-RX-tcJ">
+                                <rect key="frame" x="469" y="226" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Drum Machine" image="drum.png" id="4Bm-Ca-ZHk"/>
+                    <connections>
+                        <outlet property="bpmLabel" destination="4Ul-RX-tcJ" id="80h-EY-sLh"/>
+                        <outlet property="bpmSlider" destination="RoH-4j-oZ1" id="jmd-pN-eNv"/>
+                        <outlet property="offsetLabel" destination="1T4-NF-aFH" id="9af-jL-sXv"/>
+                        <outlet property="offsetSlider" destination="0ax-KE-2Ds" id="4H4-h3-fD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1b-8u-oOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

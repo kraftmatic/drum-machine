@@ -13,6 +13,16 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
     
     var drumMachine: DrumMachineModel = DrumMachineModel()
     var machineRunning: Bool = false;
+    
+    @IBOutlet weak var bpmSlider: UISlider!
+    @IBOutlet weak var offsetSlider: UISlider!
+    
+    @IBOutlet weak var offsetLabel: UILabel!
+    @IBOutlet weak var bpmLabel: UILabel!
+    var bpmSetting: Double = 60.0
+    var offsetSetting: Double = 0.0
+    var bpmInt: Int = 60
+    
     var hihatPlayer = AVAudioPlayer()
     var kickPlayer = AVAudioPlayer()
     var snarePlayer = AVAudioPlayer()
@@ -25,7 +35,7 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
 
     @IBAction func startButtonClicked(sender: AnyObject) {
         if !machineRunning{
-            drumMachine.startDrumMachine(240)
+            drumMachine.startDrumMachine(bpmInt, offset: offsetSetting)
             machineRunning = true;
         } else{
             drumMachine.stopDrumMachine()
@@ -45,6 +55,25 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
             sender.isActive = false
         }
     }
+    
+    @IBAction func bpmChanged(sender: UISlider) {
+        bpmSetting = Double(bpmSlider.value)
+        bpmLabel.text = createBpmLabelText(bpmSetting)
+    }
+    
+    func createBpmLabelText(bpmValue: Double) -> String {
+        var bpmRound = round(bpmValue)
+        bpmInt = Int(bpmRound)
+        return String(bpmInt)
+    }
+    
+    @IBAction func offsetChanged(sender: UISlider) {
+        offsetSetting = Double(offsetSlider.value)
+        var offsetText = String(format:"%f", offsetSetting)
+        offsetText = offsetText.substringToIndex(advance(offsetText.startIndex, 4))
+        offsetLabel.text = offsetText
+    }
+    
     
     func playSoundOne() {
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hihat",ofType: "mp3")!)
