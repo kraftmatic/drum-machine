@@ -103,19 +103,24 @@ class DrumMachineModel: NSObject {
     func persistDrumPatternInSlot(slotNumber: Int){
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        let bankLabel = "bank" + String(format: "%f", slotNumber)
+        let bankLabel = "bank" + String(slotNumber)
+
+        var data = NSKeyedArchiver.archivedDataWithRootObject(machineDictionary)
+        userDefaults.setObject(data, forKey: bankLabel)
         
-        userDefaults.setObject(machineDictionary, forKey: bankLabel)
     }
     
     func loadDrumPatternFromSlot(slotNumber: Int){
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        let bankLabel = "bank" + String(format: "%f", slotNumber)
+        let bankLabel = "bank" + String(slotNumber)
         
-        // machineDictionary = userDefaults.dictionaryForKey(bankLabel)  // Need to pull dictionary back from the user defaults
+        if (userDefaults.objectForKey(bankLabel) != nil){
+            var dictionaryData = NSUserDefaults.standardUserDefaults().objectForKey(bankLabel) as NSData
+            machineDictionary = NSKeyedUnarchiver.unarchiveObjectWithData(dictionaryData) as [String : Bool]
         
-        delegate?.updateBoard(machineDictionary)
+            delegate?.updateBoard(machineDictionary)
+        }
     }
 
 }
