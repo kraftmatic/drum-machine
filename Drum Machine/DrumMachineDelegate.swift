@@ -7,6 +7,7 @@
 //
 
 protocol DrumMachineDelegate {
+    func updateBoard(Dictionary<String, Bool>)
     func playSoundOne()
     func playSoundTwo()
     func playSoundThree()

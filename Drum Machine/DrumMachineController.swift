@@ -115,4 +115,45 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         sticksPlayer.play()
     }
     
+    
+    @IBAction func bankOneSave(sender: UIButton) {
+        drumMachine.persistDrumPatternInSlot(1)
+    }
+    
+    @IBAction func bankOneLoad(sender: UIButton) {
+        drumMachine.loadDrumPatternFromSlot(1)
+    }
+    
+    @IBAction func bankTwoSave(sender: UIButton) {
+        drumMachine.persistDrumPatternInSlot(2)
+    }
+    
+    @IBAction func bankTwoLoad(sender: UIButton) {
+        drumMachine.loadDrumPatternFromSlot(2)
+    }
+    
+    @IBAction func bankThreeSave(sender: UIButton) {
+        drumMachine.persistDrumPatternInSlot(3)
+    }
+    
+    @IBAction func bankThreeLoad(sender: UIButton) {
+        drumMachine.loadDrumPatternFromSlot(3)
+    }
+    
+    
+    func updateBoard(machineDictionary: Dictionary<String, Bool>) {
+        
+        for (buttonTag, buttonStatus) in machineDictionary {
+            var buttonTagInt: Int = buttonTag.toInt()!
+            var tempButton: DrumMachineButton = self.view.viewWithTag(buttonTagInt) as DrumMachineButton
+            if buttonStatus == true {
+                tempButton.setImage(UIImage(named: "led-on-15.png"), forState: UIControlState.Normal)
+                tempButton.isActive = true
+            } else {
+                tempButton.setImage(UIImage(named: "led-off-15.png"), forState: UIControlState.Normal)
+                tempButton.isActive = false
+            }
+        }
+    }
+    
 }
