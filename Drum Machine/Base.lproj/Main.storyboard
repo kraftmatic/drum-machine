@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y57-AX-dVh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Drum Machine-->
@@ -341,7 +343,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="401" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHR-1d-Tt0" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="99" y="110" width="15" height="22"/>
+                                <rect key="frame" x="99" y="112" width="15" height="24"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -350,7 +352,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="402" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmo-Qp-HQZ" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="122" y="110" width="15" height="22"/>
+                                <rect key="frame" x="122" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -359,7 +361,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="403" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AP-Yt-8Uq" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="145" y="110" width="15" height="22"/>
+                                <rect key="frame" x="145" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -368,7 +370,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="404" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-fe-UXl" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="168" y="110" width="15" height="22"/>
+                                <rect key="frame" x="168" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -377,7 +379,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="405" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-Fy-p6K" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="211" y="110" width="15" height="22"/>
+                                <rect key="frame" x="211" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -386,7 +388,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="406" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBj-vn-MBh" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="234" y="110" width="15" height="22"/>
+                                <rect key="frame" x="234" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -395,7 +397,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="407" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSF-Wh-eRl" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="257" y="110" width="15" height="22"/>
+                                <rect key="frame" x="257" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -404,7 +406,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="408" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-Lw-rUy" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="280" y="110" width="15" height="22"/>
+                                <rect key="frame" x="280" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -413,7 +415,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="409" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-RZ-mbW" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="318" y="110" width="15" height="22"/>
+                                <rect key="frame" x="318" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -422,7 +424,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="410" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-jl-03R" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="341" y="110" width="15" height="22"/>
+                                <rect key="frame" x="341" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -431,7 +433,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="411" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-Tc-Lng" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="364" y="110" width="15" height="22"/>
+                                <rect key="frame" x="364" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -440,21 +442,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="412" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4av-3l-7Xd" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="387" y="110" width="15" height="22"/>
+                                <rect key="frame" x="387" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="9PJ-gp-h0V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="501" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-wY-VzS" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="99" y="140" width="15" height="22"/>
-                                <state key="normal" image="led-off-15.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="fL2-yl-Irm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="502" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw5-y9-AhX" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
@@ -556,32 +549,32 @@
                                     <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="VnO-7P-OkA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi Hat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-ek-bYo">
-                                <rect key="frame" x="16" y="20" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Hat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-ek-bYo">
+                                <rect key="frame" x="16" y="40" width="48" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHr-s5-sSx">
-                                <rect key="frame" x="16" y="50" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHr-s5-sSx">
+                                <rect key="frame" x="16" y="69" width="32.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snare" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-x0-KKK">
-                                <rect key="frame" x="16" y="80" width="53" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snare" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-x0-KKK">
+                                <rect key="frame" x="16" y="99" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzz-ez-YNt">
-                                <rect key="frame" x="16" y="110" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzz-ez-YNt">
+                                <rect key="frame" x="16" y="129" width="33.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sticks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myO-ac-ido">
-                                <rect key="frame" x="16" y="140" width="53" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sticks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myO-ac-ido">
+                                <rect key="frame" x="16" y="156" width="47.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -695,7 +688,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="413" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-Uk-2mK" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="427" y="110" width="15" height="22"/>
+                                <rect key="frame" x="427" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -704,7 +697,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="414" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zl-LF-bDj" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="450" y="110" width="15" height="22"/>
+                                <rect key="frame" x="450" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -713,7 +706,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="415" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-VH-ZAw" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="473" y="110" width="15" height="22"/>
+                                <rect key="frame" x="473" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -758,7 +751,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="416" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-4Y-oZE" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
-                                <rect key="frame" x="496" y="110" width="15" height="22"/>
+                                <rect key="frame" x="496" y="112.5" width="15" height="22"/>
                                 <state key="normal" image="led-off-15.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -777,33 +770,30 @@
                                     <action selector="startButtonClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="L63-ag-BHG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BPM:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO9-iH-VdJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPM:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO9-iH-VdJ">
                                 <rect key="frame" x="120" y="206" width="57" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="XIS-bX-1Zf"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Offset:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-gb-L5l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offset:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-gb-L5l">
                                 <rect key="frame" x="116" y="287" width="61" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="9iH-2z-ge1"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="60" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-4j-oZ1">
-                                <rect key="frame" x="14" y="169" width="297" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="120" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-4j-oZ1">
+                                <rect key="frame" x="14" y="201" width="297" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="Ne9-1f-osi"/>
+                                </constraints>
                                 <connections>
                                     <action selector="bpmChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="JbT-ha-FVi"/>
                                     <action selector="bpmChanged:" destination="nC3-py-3ia" eventType="valueChanged" id="klO-s3-dpz"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-KE-2Ds">
-                                <rect key="frame" x="14" y="250" width="297" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-KE-2Ds">
+                                <rect key="frame" x="14" y="284" width="297" height="31"/>
                                 <connections>
                                     <action selector="offsetChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="Gjm-2b-eNg"/>
                                     <action selector="offsetChanged:" destination="nC3-py-3ia" eventType="valueChanged" id="nFk-Ia-Gq2"/>
@@ -815,14 +805,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ul-RX-tcJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ul-RX-tcJ">
                                 <rect key="frame" x="178" y="205" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r2-7H-NbO">
-                                <rect key="frame" x="318" y="174" width="46" height="30"/>
+                                <rect key="frame" x="364" y="192" width="46" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -831,7 +821,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exO-ay-aTw">
-                                <rect key="frame" x="318" y="212" width="46" height="30"/>
+                                <rect key="frame" x="364" y="230" width="46" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -840,7 +830,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4m-7X-1Te">
-                                <rect key="frame" x="318" y="250" width="46" height="30"/>
+                                <rect key="frame" x="364" y="268" width="46" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -850,7 +840,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPL-sZ-HIi">
-                                <rect key="frame" x="427" y="174" width="46" height="30"/>
+                                <rect key="frame" x="473" y="191" width="46" height="30"/>
                                 <state key="normal" title="Load">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -859,7 +849,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGi-5u-nBW">
-                                <rect key="frame" x="427" y="212" width="46" height="30"/>
+                                <rect key="frame" x="473" y="230" width="46" height="30"/>
                                 <state key="normal" title="Load">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -868,7 +858,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPO-b2-waU">
-                                <rect key="frame" x="427" y="250" width="46" height="30"/>
+                                <rect key="frame" x="473" y="268" width="46" height="30"/>
                                 <state key="normal" title="Load">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -877,25 +867,52 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDO-Cf-bsH">
-                                <rect key="frame" x="372" y="178" width="55" height="21"/>
+                                <rect key="frame" x="418" y="196" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je5-3E-EY5">
-                                <rect key="frame" x="372" y="216" width="55" height="21"/>
+                                <rect key="frame" x="418" y="234" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-27-sHF">
-                                <rect key="frame" x="372" y="254" width="55" height="21"/>
+                                <rect key="frame" x="418" y="272" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="501" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-wY-VzS" customClass="DrumMachineButton" customModule="Drum_Machine" customModuleProvider="target">
+                                <rect key="frame" x="99" y="140" width="15" height="22"/>
+                                <state key="normal" image="led-off-15.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isClicked:" destination="nC3-py-3ia" eventType="touchUpInside" id="fL2-yl-Irm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RoH-4j-oZ1" firstAttribute="width" secondItem="0ax-KE-2Ds" secondAttribute="width" id="6qz-Wp-E1m"/>
+                            <constraint firstItem="0xh-x0-KKK" firstAttribute="top" secondItem="aHr-s5-sSx" secondAttribute="bottom" constant="9" id="8RO-8W-NcL"/>
+                            <constraint firstItem="RoH-4j-oZ1" firstAttribute="top" secondItem="myO-ac-ido" secondAttribute="bottom" constant="25" id="CeW-ta-Kha"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="aHr-s5-sSx" secondAttribute="leading" id="PXw-Zx-f84"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="myO-ac-ido" secondAttribute="leading" id="SQW-kL-I5U"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="dJE-4L-C1S" secondAttribute="leadingMargin" id="TBL-b3-TJc"/>
+                            <constraint firstItem="aHr-s5-sSx" firstAttribute="top" secondItem="zKq-ek-bYo" secondAttribute="bottom" constant="9" id="VsM-jt-bbn"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="top" secondItem="ZMB-Fl-f5S" secondAttribute="bottom" constant="20" id="fQm-hd-OMW"/>
+                            <constraint firstItem="0ax-KE-2Ds" firstAttribute="top" secondItem="RoH-4j-oZ1" secondAttribute="bottom" constant="53.5" id="idN-XF-kOn"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="0ax-KE-2Ds" secondAttribute="leading" id="n8c-uP-Hty"/>
+                            <constraint firstItem="myO-ac-ido" firstAttribute="top" secondItem="wzz-ez-YNt" secondAttribute="bottom" constant="7" id="qkk-Zx-QdT"/>
+                            <constraint firstItem="wzz-ez-YNt" firstAttribute="top" secondItem="0xh-x0-KKK" secondAttribute="bottom" constant="9.5" id="sVa-Ag-8zf"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="wzz-ez-YNt" secondAttribute="leading" id="tL5-0n-oy2"/>
+                            <constraint firstItem="RoH-4j-oZ1" firstAttribute="leading" secondItem="zKq-ek-bYo" secondAttribute="leading" id="uRb-dW-iic"/>
+                            <constraint firstItem="RoH-4j-oZ1" firstAttribute="width" secondItem="0ax-KE-2Ds" secondAttribute="width" id="ve6-QG-8gl"/>
+                            <constraint firstItem="zKq-ek-bYo" firstAttribute="leading" secondItem="0xh-x0-KKK" secondAttribute="leading" id="z0u-1D-3p7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Drum Machine" image="drum.png" id="4Bm-Ca-ZHk"/>
                     <connections>
@@ -907,7 +924,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1b-8u-oOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="736"/>
+            <point key="canvasLocation" x="165" y="706.5"/>
         </scene>
         <!--About-->
         <scene sceneID="dUI-9G-pbz">
@@ -921,11 +938,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="grand-prize-kit.png" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-ZJ-ArF">
-                                <rect key="frame" x="132" y="28" width="336" height="264"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grand-prize-kit.png" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-ZJ-ArF">
+                                <rect key="frame" x="50" y="28" width="500" height="301"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drum Machine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgv-op-CFj">
-                                <rect key="frame" x="69" y="268" width="463" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drum Machine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgv-op-CFj">
+                                <rect key="frame" x="104" y="261.5" width="393" height="77.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="58"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -960,86 +977,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BPM:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-q8-nbz">
-                                <rect key="frame" x="152" y="66" width="55" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="pba-3W-jdY"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-q8-nbz">
+                                <rect key="frame" x="150" y="60" width="42.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Offset:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-Fb-pU0">
-                                <rect key="frame" x="152" y="147" width="53" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="13x-Dc-PbE"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offset:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-Fb-pU0">
+                                <rect key="frame" x="150" y="160" width="51" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BJx-q0-iaT">
-                                <rect key="frame" x="16" y="196" width="230" height="29"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <segments>
-                                    <segment title="2/4"/>
-                                    <segment title="3/4"/>
-                                    <segment title="4/4"/>
-                                </segments>
-                                <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time Signature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-e3-yNj">
-                                <rect key="frame" x="28" y="260" width="179" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-kC-ABO">
+                                <rect key="frame" x="210" y="60" width="30" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="QN2-CE-x7I"/>
-                                    <constraint firstAttribute="width" constant="179" id="wor-pm-tXA"/>
+                                    <constraint firstAttribute="width" constant="30" id="J6j-Od-yvj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Sd-dL3">
-                                <rect key="frame" x="455" y="37" width="94" height="70"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="60" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-Pz-SpA">
+                                <rect key="frame" x="14" y="40" width="388" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="67F-Jl-X7F"/>
+                                    <constraint firstAttribute="width" constant="384" id="nGj-59-KxD"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="bpmChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="FTi-Oy-53f"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-1P-qnh">
+                                <rect key="frame" x="14" y="109" width="388" height="31"/>
+                                <connections>
+                                    <action selector="offsetChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="kS5-B1-fDc"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Sd-dL3">
+                                <rect key="frame" x="455" y="15" width="94" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="BAS-6c-L4X"/>
+                                    <constraint firstAttribute="height" constant="70" id="j1m-pE-TGE"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="qT0-Jv-ok5" eventType="touchUpInside" id="Uqj-qb-t9f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-kC-ABO">
-                                <rect key="frame" x="215" y="66" width="53" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzh-aP-duV" customClass="MetronomeBackground" customModule="Drum_Machine" customModuleProvider="target">
+                                <rect key="frame" x="6" y="12" width="431" height="157"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="431" id="iSB-CM-eTT"/>
+                                    <constraint firstAttribute="height" constant="157" id="zfS-p1-ZAo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-sY-OX5">
+                                <rect key="frame" x="206" y="140" width="33.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="7Y7-rY-bQk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="60" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-Pz-SpA">
-                                <rect key="frame" x="14" y="28" width="400" height="31"/>
-                                <connections>
-                                    <action selector="bpmChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="FTi-Oy-53f"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-1P-qnh">
-                                <rect key="frame" x="14" y="109" width="400" height="31"/>
-                                <connections>
-                                    <action selector="offsetChanged:" destination="qT0-Jv-ok5" eventType="valueChanged" id="kS5-B1-fDc"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-sY-OX5">
-                                <rect key="frame" x="215" y="147" width="53" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Y7-rY-bQk"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4qV-1P-qnh" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" id="1z0-I5-tLm"/>
+                            <constraint firstItem="Ond-Fb-pU0" firstAttribute="trailing" secondItem="4Ab-sY-OX5" secondAttribute="trailing" constant="-92.5" id="2s2-7z-0vm"/>
+                            <constraint firstItem="Ond-Fb-pU0" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="140" id="8xq-sh-r5R"/>
+                            <constraint firstItem="4Ab-sY-OX5" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="190" id="AHP-XM-fAK"/>
+                            <constraint firstItem="NRm-Pz-SpA" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" id="AsK-s4-fP2"/>
+                            <constraint firstItem="Ond-Fb-pU0" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="134" id="BAC-R7-IXx"/>
+                            <constraint firstItem="Rrm-kC-ABO" firstAttribute="top" secondItem="MxT-fK-SNQ" secondAttribute="topMargin" constant="60" id="HEg-V8-KQg"/>
+                            <constraint firstItem="Kzh-aP-duV" firstAttribute="top" secondItem="MxT-fK-SNQ" secondAttribute="topMargin" constant="12" id="JAf-uk-GdQ"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="top" secondItem="MxT-fK-SNQ" secondAttribute="topMargin" constant="60" id="JPI-gT-zJW"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="134" id="Oxh-xx-kG2"/>
+                            <constraint firstItem="Rrm-kC-ABO" firstAttribute="firstBaseline" secondItem="FEK-q8-nbz" secondAttribute="firstBaseline" id="Plb-RN-RRw"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="Rrm-kC-ABO" secondAttribute="leading" constant="-60" id="Qg4-Zf-QPg"/>
+                            <constraint firstItem="Ond-Fb-pU0" firstAttribute="top" secondItem="4Ab-sY-OX5" secondAttribute="top" id="Wca-x5-lN7"/>
+                            <constraint firstItem="4Ab-sY-OX5" firstAttribute="top" secondItem="Kzh-aP-duV" secondAttribute="bottom" constant="140" id="YKZ-b0-y0U"/>
+                            <constraint firstItem="4Ab-sY-OX5" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="140" id="aer-7V-p2Z"/>
+                            <constraint firstItem="Rrm-kC-ABO" firstAttribute="baseline" secondItem="4Ab-sY-OX5" secondAttribute="baseline" constant="-60" id="arv-VV-1jv"/>
+                            <constraint firstItem="NRm-Pz-SpA" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="20" id="ch2-2u-XCa"/>
+                            <constraint firstItem="r8B-Sd-dL3" firstAttribute="top" secondItem="MxT-fK-SNQ" secondAttribute="topMargin" constant="15" id="hNq-cV-C2Q"/>
+                            <constraint firstItem="Rrm-kC-ABO" firstAttribute="leading" secondItem="FEK-q8-nbz" secondAttribute="trailing" constant="10" id="hqv-uM-VA4"/>
+                            <constraint firstItem="4Ab-sY-OX5" firstAttribute="top" secondItem="Kzh-aP-duV" secondAttribute="bottom" constant="140" id="ipF-xU-NeC"/>
+                            <constraint firstItem="4Ab-sY-OX5" firstAttribute="top" secondItem="MxT-fK-SNQ" secondAttribute="topMargin" constant="140" id="jde-mn-ZUT"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="leading" secondItem="Ond-Fb-pU0" secondAttribute="leading" id="m6S-B4-RW4"/>
+                            <constraint firstItem="FEK-q8-nbz" firstAttribute="top" secondItem="2uW-vF-Pfj" secondAttribute="bottom" constant="60" id="mvH-o3-A6D"/>
+                            <constraint firstItem="4qV-1P-qnh" firstAttribute="top" secondItem="NRm-Pz-SpA" secondAttribute="bottom" constant="39" id="tqe-bA-fGQ"/>
+                            <constraint firstItem="Kzh-aP-duV" firstAttribute="leading" secondItem="MxT-fK-SNQ" secondAttribute="leadingMargin" constant="-10" id="ulI-Rq-mZG"/>
+                            <constraint firstItem="r8B-Sd-dL3" firstAttribute="leading" secondItem="4qV-1P-qnh" secondAttribute="trailing" constant="55" id="v1W-zK-QMd"/>
+                            <constraint firstItem="NRm-Pz-SpA" firstAttribute="trailing" secondItem="4qV-1P-qnh" secondAttribute="trailing" id="vMN-Xm-rm1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Plb-RN-RRw"/>
+                                <exclude reference="arv-VV-1jv"/>
+                                <exclude reference="hqv-uM-VA4"/>
+                                <exclude reference="mvH-o3-A6D"/>
+                                <exclude reference="2s2-7z-0vm"/>
+                                <exclude reference="Wca-x5-lN7"/>
+                                <exclude reference="YKZ-b0-y0U"/>
+                                <exclude reference="aer-7V-p2Z"/>
+                                <exclude reference="ipF-xU-NeC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Metronome" image="metronome.png" id="FWV-Px-2x7"/>
                     <connections>
                         <outlet property="bpmLabel" destination="Rrm-kC-ABO" id="ziM-4r-mU4"/>
                         <outlet property="bpmSlider" destination="NRm-Pz-SpA" id="m9S-eV-XrC"/>
+                        <outlet property="metronomeBackground" destination="Kzh-aP-duV" id="mGM-6P-Wgz"/>
                         <outlet property="offsetLabel" destination="4Ab-sY-OX5" id="fnr-fZ-nvw"/>
                         <outlet property="offsetSlider" destination="4qV-1P-qnh" id="BV0-YW-l1p"/>
                         <outlet property="startButton" destination="r8B-Sd-dL3" id="0Yi-gs-pf6"/>
@@ -1047,7 +1104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0de-ZR-zVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="-10"/>
+            <point key="canvasLocation" x="172" y="31"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kuH-oE-Xez">

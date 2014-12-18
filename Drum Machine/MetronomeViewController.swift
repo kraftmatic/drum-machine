@@ -25,6 +25,8 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
     var offsetSetting: Double = 0.0
     var bpmInt: Int = 60
     
+    @IBOutlet weak var metronomeBackground: MetronomeBackground!
+    
     override init (){
         super.init()
     }
@@ -36,6 +38,7 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
     
     override func viewDidLoad() {
         metronome.delegate = self
+        self.view.sendSubviewToBack(metronomeBackground)
     }
 
     func metronomeTick() {

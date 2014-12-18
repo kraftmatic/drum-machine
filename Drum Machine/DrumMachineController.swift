@@ -31,6 +31,8 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
     
     override func viewDidLoad() {
         drumMachine.delegate = self
+        self.drawDrumButtonFrame()
+        self.drawMemoryBankFrame()
     }
 
     @IBAction func startButtonClicked(sender: AnyObject) {
@@ -154,6 +156,62 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
                 tempButton.isActive = false
             }
         }
+    }
+    
+    func drawDrumButtonFrame() {
+        
+        var bezier:CAShapeLayer = CAShapeLayer()
+        
+        bezier.path = buttonBezierPath().CGPath
+        bezier.strokeColor = UIColor.blackColor().CGColor
+        bezier.fillColor = UIColor(white: 0.8, alpha: 0.85).CGColor
+        bezier.lineWidth = 1.5
+        bezier.strokeStart = 0.0
+        bezier.strokeEnd = 1.0
+        
+        self.view.layer.insertSublayer(bezier, atIndex: 0)
+        
+    }
+    
+    func buttonBezierPath() -> UIBezierPath {
+        
+        var path = UIBezierPath()
+        
+        path.moveToPoint(CGPointMake(90, 10))
+        path.addLineToPoint(CGPointMake(90, 170))
+        path.addLineToPoint(CGPointMake(520, 170))
+        path.addLineToPoint(CGPointMake(520, 10))
+        path.addLineToPoint(CGPointMake(90, 10))
+        
+        return path;
+    }
+    
+    func drawMemoryBankFrame() {
+        
+        var bezier:CAShapeLayer = CAShapeLayer()
+        
+        bezier.path          = bankBezierPath().CGPath
+        bezier.strokeColor   = UIColor.blackColor().CGColor
+        bezier.fillColor     = UIColor(white: 0.8, alpha: 0.85).CGColor
+        bezier.lineWidth     = 1.5
+        bezier.strokeStart   = 0.0
+        bezier.strokeEnd     = 1.0
+        
+        self.view.layer.insertSublayer(bezier, atIndex: 0)
+        
+    }
+    
+    func bankBezierPath() -> UIBezierPath {
+        
+        var path = UIBezierPath()
+        
+        path.moveToPoint(CGPointMake(365, 190))
+        path.addLineToPoint(CGPointMake(365, 300))
+        path.addLineToPoint(CGPointMake(520, 300))
+        path.addLineToPoint(CGPointMake(520, 190))
+        path.addLineToPoint(CGPointMake(365, 190))
+        
+        return path;
     }
     
 }
