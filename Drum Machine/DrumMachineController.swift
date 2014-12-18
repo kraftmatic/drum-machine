@@ -19,21 +19,31 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
     
     @IBOutlet weak var offsetLabel: UILabel!
     @IBOutlet weak var bpmLabel: UILabel!
-    var bpmSetting: Double = 60.0
-    var offsetSetting: Double = 0.0
-    var bpmInt: Int = 60
     
+    // MARK: Control Variables
+    
+    var bpmSetting: Double = 120.0
+    var offsetSetting: Double = 0.0
+    var bpmInt: Int = 120
+    
+    // MARK: Audio Players For Each Channel
+    
+    // I had to create a separate player for each channel as at faster BPMs the player wouldn't unqueue fast enough for the next sound
     var hihatPlayer = AVAudioPlayer()
     var kickPlayer = AVAudioPlayer()
     var snarePlayer = AVAudioPlayer()
     var tomPlayer = AVAudioPlayer()
     var sticksPlayer = AVAudioPlayer()
     
+    // MARK: Default Control Functions
+    
     override func viewDidLoad() {
         drumMachine.delegate = self
         self.drawDrumButtonFrame()
         self.drawMemoryBankFrame()
     }
+    
+    // MARK: Model Control Functions
 
     @IBAction func startButtonClicked(sender: AnyObject) {
         if !machineRunning{
@@ -45,6 +55,7 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         }
     }
     
+    // MARK: Button Controls
     
     @IBAction func isClicked(sender: DrumMachineButton) {
         if sender.isActive == false {
@@ -57,6 +68,8 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
             sender.isActive = false
         }
     }
+    
+    // Slider Controls
     
     @IBAction func bpmChanged(sender: UISlider) {
         bpmSetting = Double(bpmSlider.value)
@@ -76,6 +89,7 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         offsetLabel.text = offsetText
     }
     
+    // MARK: Delegate Functions
     
     func playSoundOne() {
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hihat",ofType: "mp3")!)
@@ -117,6 +131,23 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         sticksPlayer.play()
     }
     
+    // This sets the board layout to whatever bank was selected
+    func updateBoard(machineDictionary: Dictionary<String, Bool>) {
+        
+        for (buttonTag, buttonStatus) in machineDictionary {
+            var buttonTagInt: Int = buttonTag.toInt()!
+            var tempButton: DrumMachineButton = self.view.viewWithTag(buttonTagInt) as DrumMachineButton
+            if buttonStatus == true {
+                tempButton.setImage(UIImage(named: "led-on-15.png"), forState: UIControlState.Normal)
+                tempButton.isActive = true
+            } else {
+                tempButton.setImage(UIImage(named: "led-off-15.png"), forState: UIControlState.Normal)
+                tempButton.isActive = false
+            }
+        }
+    }
+    
+    // MARK: Save and Load Buttons
     
     @IBAction func bankOneSave(sender: UIButton) {
         drumMachine.persistDrumPatternInSlot(1)
@@ -142,21 +173,7 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         drumMachine.loadDrumPatternFromSlot(3)
     }
     
-    
-    func updateBoard(machineDictionary: Dictionary<String, Bool>) {
-        
-        for (buttonTag, buttonStatus) in machineDictionary {
-            var buttonTagInt: Int = buttonTag.toInt()!
-            var tempButton: DrumMachineButton = self.view.viewWithTag(buttonTagInt) as DrumMachineButton
-            if buttonStatus == true {
-                tempButton.setImage(UIImage(named: "led-on-15.png"), forState: UIControlState.Normal)
-                tempButton.isActive = true
-            } else {
-                tempButton.setImage(UIImage(named: "led-off-15.png"), forState: UIControlState.Normal)
-                tempButton.isActive = false
-            }
-        }
-    }
+    // MARK: Core Graphics Frame Drawing
     
     func drawDrumButtonFrame() {
         

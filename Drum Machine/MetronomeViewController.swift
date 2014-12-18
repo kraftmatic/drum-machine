@@ -12,11 +12,16 @@ import AVFoundation
 
 class MetronomeViewController: UIViewController, MetronomeDelegate {
     
+    // MARK: Storyboard Outlets
+    
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var bpmSlider: UISlider!
     @IBOutlet weak var offsetSlider: UISlider!
     @IBOutlet weak var offsetLabel: UILabel!
+    @IBOutlet weak var metronomeBackground: MetronomeBackground!
+    
+    // MARK: Control Variables
     
     var metronome: MetronomeModel = MetronomeModel()
     var audioPlayer = AVAudioPlayer()
@@ -25,7 +30,7 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
     var offsetSetting: Double = 0.0
     var bpmInt: Int = 60
     
-    @IBOutlet weak var metronomeBackground: MetronomeBackground!
+    // MARK: Default Control Functions
     
     override init (){
         super.init()
@@ -41,6 +46,8 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
         self.view.sendSubviewToBack(metronomeBackground)
     }
 
+    // MARK: Delegate Functions
+    
     func metronomeTick() {
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("tick",ofType: "mp3")!)
         var error:NSError?
@@ -48,6 +55,8 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
         audioPlayer.prepareToPlay()
         audioPlayer.play()
     }
+    
+    // MARK: Control Functions For Sliding Controls
     
     @IBAction func bpmChanged(sender: AnyObject) {
         bpmSetting = Double(bpmSlider.value)
@@ -60,6 +69,7 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
         return String(bpmInt)
     }
     
+    // The offset will control syncopation when sent with the bpm to the model
     @IBAction func offsetChanged(sender: AnyObject) {
         offsetSetting = Double(offsetSlider.value)
         var offsetText = String(format:"%f", offsetSetting)
@@ -67,6 +77,7 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
         offsetLabel.text = offsetText
     }
     
+    // MARK: Control Functions For Buttons
     
     @IBAction func startButtonPressed(sender: UIButton) {
         if metronomeStarted == false {

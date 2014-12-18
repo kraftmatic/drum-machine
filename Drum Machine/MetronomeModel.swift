@@ -10,6 +10,8 @@ import Foundation
 
 class MetronomeModel: NSObject {
     
+    // MARK: Model Variables
+    
     var delegate: MetronomeDelegate?
     var timer: NSTimer;
     var beatOffset: Double = 0.0
@@ -19,6 +21,8 @@ class MetronomeModel: NSObject {
         timer = NSTimer();
         super.init()
     }
+    
+    // MARK: Public Controls
 
     func startMetronome(bpm: Int, offset: Double) {
         beatOffset = offset
@@ -31,8 +35,13 @@ class MetronomeModel: NSObject {
         timer.invalidate()
     }
     
+    // MARK: Selector Functions
+    
     func fireTick(){
         delegate?.metronomeTick()
+        
+        // Second one-time firing timer to help play an offset beat
+        
         var offsetTiming: NSTimeInterval = ((120 / bpmDouble) / 2) + (((120.0 / bpmDouble) / 2) * beatOffset)
         var offsetTimer = NSTimer.scheduledTimerWithTimeInterval(offsetTiming, target: self, selector: Selector("fireOffsetTick"), userInfo: nil, repeats: false)
     }

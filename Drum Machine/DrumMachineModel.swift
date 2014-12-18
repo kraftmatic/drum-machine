@@ -35,6 +35,9 @@ class DrumMachineModel: NSObject {
         }
     }
     
+    // MARK: Public Functions
+    
+    // Updates the boolean in our dictionary to determine whether or not the note is played
     func updateDictionaryValue(valueName: String, valueBool: Bool){
         machineDictionary.updateValue(valueBool, forKey: valueName)
     }
@@ -50,6 +53,8 @@ class DrumMachineModel: NSObject {
     func stopDrumMachine(){
         timer.invalidate()
     }
+    
+    // MARK: Selector Functions
     
     func fireTick(){
         barNumber++
@@ -71,6 +76,8 @@ class DrumMachineModel: NSObject {
                 }
             }
         }
+        
+        // The second timer is a one-time fire that helps us do an offset beat for that fun syncopation effect
         
         var offsetTiming: NSTimeInterval = ((120 / bpmDouble) / 2) + (((120.0 / bpmDouble) / 2) * beatOffset)
         var offsetTimer = NSTimer.scheduledTimerWithTimeInterval(offsetTiming, target: self, selector: Selector("fireOffsetTick"), userInfo: nil, repeats: false)
@@ -99,6 +106,8 @@ class DrumMachineModel: NSObject {
         }
         
     }
+    
+    // MARK: Storage and Retrieval of Drum Patterns
     
     func persistDrumPatternInSlot(slotNumber: Int){
         

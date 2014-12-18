@@ -108,7 +108,6 @@
 			children = (
 				C40ACE7B1A33A1FE001F1408 /* MetronomeViewController.swift */,
 				C4D3358C1A35E32100E0C5A3 /* DrumMachineController.swift */,
-				C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +137,7 @@
 		C4E976191A4247400036ABDF /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				C4D3358A1A35E1CF00E0C5A3 /* DrumMachineButton.swift */,
 				C4E9761C1A424A880036ABDF /* MetronomeBackground.swift */,
 			);
 			name = Graphics;
