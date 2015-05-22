@@ -11,11 +11,6 @@ import UIKit
 class DrumMachineButton: UIButton {
     
     var isActive: Bool
-    
-    override init (){
-        isActive = false;
-        super.init()
-    }
 
     required init(coder aDecoder: NSCoder) {
         isActive = false;

@@ -31,10 +31,6 @@ class MetronomeViewController: UIViewController, MetronomeDelegate {
     var bpmInt: Int = 60
     
     // MARK: Default Control Functions
-    
-    override init (){
-        super.init()
-    }
 
     required init(coder aDecoder: NSCoder)
     {

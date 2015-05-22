@@ -136,7 +136,7 @@ class DrumMachineController: UIViewController, DrumMachineDelegate {
         
         for (buttonTag, buttonStatus) in machineDictionary {
             var buttonTagInt: Int = buttonTag.toInt()!
-            var tempButton: DrumMachineButton = self.view.viewWithTag(buttonTagInt) as DrumMachineButton
+            var tempButton: DrumMachineButton = self.view.viewWithTag(buttonTagInt) as! DrumMachineButton
             if buttonStatus == true {
                 tempButton.setImage(UIImage(named: "led-on-15.png"), forState: UIControlState.Normal)
                 tempButton.isActive = true

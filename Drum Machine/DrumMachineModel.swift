@@ -125,8 +125,8 @@ class DrumMachineModel: NSObject {
         let bankLabel = "bank" + String(slotNumber)
         
         if (userDefaults.objectForKey(bankLabel) != nil){
-            var dictionaryData = NSUserDefaults.standardUserDefaults().objectForKey(bankLabel) as NSData
-            machineDictionary = NSKeyedUnarchiver.unarchiveObjectWithData(dictionaryData) as [String : Bool]
+            var dictionaryData = NSUserDefaults.standardUserDefaults().objectForKey(bankLabel) as! NSData
+            machineDictionary = NSKeyedUnarchiver.unarchiveObjectWithData(dictionaryData) as! [String : Bool]
         
             delegate?.updateBoard(machineDictionary)
         }
